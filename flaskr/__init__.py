@@ -3,6 +3,6 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/')
-def hello():
+@app.route('/scrapeUrl', methods=['GET'])
+def scrape_url():
     return 'Hello world'
